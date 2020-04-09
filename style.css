@@ -1,0 +1,14 @@
+/*
+Theme Name: Zboom Music;
+Theme URI: https://osmanhaider.com;
+Author: Adnan;
+Author URI: https://osmanhaider.com;
+Version: 1.0.0;
+Decription: This is a custom theme for Music;
+Tags: Music Theme, Zboom;
+*/
+
+.comment-body .comment-author img {
+	height: 30px;
+	width: 30px;
+}
