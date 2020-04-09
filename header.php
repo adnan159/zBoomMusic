@@ -10,11 +10,11 @@
 	<meta charset="<?php bloginfo('charset');?>">
 	<meta name="description" content="<?php bloginfo('description');?>">
 	<meta name="author" content="Adnan">
-	
+
     <!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
     <!-- CSS
   ================================================== -->
   	<link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri());?>/css/zerogrid.css">
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri());?>/css/responsive.css">
 	<link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri());?>/css/responsiveslides.css" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');?>">
-	
+
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -34,7 +34,7 @@
 		<script src="js/html5.js"></script>
 		<script src="js/css3-mediaqueries.js"></script>
 	<![endif]-->
-	
+
 	<link href='<?php echo esc_url(get_template_directory_uri());?>/images/favicon.ico' rel='icon' type='image/x-icon'/>
 	<script src="<?php echo esc_url(get_template_directory_uri());?>/js/jquery.min.js"></script>
 	<script src="<?php echo esc_url(get_template_directory_uri());?>/js/responsiveslides.js"></script>
@@ -59,7 +59,7 @@
 <header>
 	<div class="wrap-header zerogrid">
 		<div id="logo"><a href="<?php bloginfo('home');?>"><img src="<?php echo get_template_directory_uri();?>/images/logo.png"/></a></div>
-		
+
 		<div id="search">
 			<div class="button-search"></div>
 			<form method="GET" action="<?php bloginfo('home'); ?>">
@@ -72,15 +72,13 @@
 <nav>
 	<div class="wrap-nav zerogrid">
 		<div class="menu">
-			
-			<?php
 
+			<?php
 				wp_nav_menu(array(
 					'theme_location'	=> 'main-menu',
 				));
 			?>
 
-
-		</div>		
+		</div>
 	</div>
 </nav>

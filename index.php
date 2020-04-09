@@ -13,14 +13,14 @@
 						<?php the_post_thumbnail();?>
 						<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
 						<div class="info">[By <?php the_author();?> on <?php the_time('F d, Y');?> with <?php comments_popup_link('No Comment Here','One Comment','% comments','adnan','Commnet Disable');?>]</div>
-						
+
 						<?php read_more(30);?> ... <a href="<?php the_permalink();?>">read more</a>
 					</article>
 
 					<?php endwhile;?>
 
 					<div id="pagi">
-						<?php 
+						<?php
 							the_posts_pagination(array(
 								'show_all'				=>true,
 								'prev_text'				=> 'PREV',
