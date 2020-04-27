@@ -93,4 +93,41 @@ function read_more($limit){
 	echo implode(" ",$less_content);
 }
 
+//custom widget
+class zboom_test_widgets extends WP_Widget{
+	public function __construct(){
+		parent:: __construct('zboom_test_widgets','Test Widget',array(
+			'description'	=> 'This is test widget',
+		));
+	}
+
+
+
+	public function widget($args,$instance){
+		$title = $instance['title'];
+
+		echo $args['before_widget'].$args['before_title'].$title.$args['after_title'].$args['after_widget'];
+	}
+
+	public function form($instance){ 
+		$title = $instance['title'];
+		$facebook = $instance['facebook'];
+
+		?>
+		<p>
+			<label for="<?php echo $this-> get_field_id('title');?>">Title:</label>
+			<input id="<?php echo $this-> get_field_id('title');?>" type="text" name="<?php echo $this-> get_field_name('title');?>" value="<?php echo $title?>" class="widefat title">
+		</p>
+		
+	<?php }
+}
+
+function zboom_test_widget_function(){
+	register_widget('zboom_test_widgets');
+}
+add_action('widgets_init','zboom_test_widget_function');
+
+
+require_once('new-widgets.php');
+
 ?>

@@ -1,5 +1,7 @@
 ﻿<?php get_header(); ?>
 
+
+
 <!--------------Content--------------->
 <section id="content">
 	<div class="wrap-content zerogrid">
