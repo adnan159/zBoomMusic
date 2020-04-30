@@ -130,4 +130,10 @@ add_action('widgets_init','zboom_test_widget_function');
 
 require_once('new-widgets.php');
 
+
+require_once(__DIR__.'/widgets/author-widget.php');
+
+
+require_once(dirname(__FILE__).'/inc/plugins/example.php');
+
 ?>
